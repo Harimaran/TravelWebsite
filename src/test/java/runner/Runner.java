@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/features",
 		glue = "testScripts",
-		dryRun = false,
+		dryRun = true,
 		monochrome = true,
 		plugin= "html:target/logIn.html"
 		)

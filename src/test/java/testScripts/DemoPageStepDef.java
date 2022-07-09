@@ -23,7 +23,7 @@ public class DemoPageStepDef {
 	
 	@When("User clicks on LogIn button")
 	public void user_clicks_on_log_in_button() {
-		demoPage = new DemoPage();
+		if(demoPage== null) demoPage = new DemoPage();
 		demoPage.clickLogInButton();
 	}
 	
